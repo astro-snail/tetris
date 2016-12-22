@@ -2,6 +2,7 @@ package tetris;
 
 import java.awt.HeadlessException;
 
+import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.SwingUtilities;
 
@@ -19,6 +20,8 @@ public class Tetris extends JFrame {
 		setSize(400, 600);
 		board.start();
 		setTitle("Tetris");
+		ImageIcon icon = new ImageIcon(getClass().getResource("/tetris/tetris.png"));
+		setIconImage(icon.getImage());
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 	}
 	
